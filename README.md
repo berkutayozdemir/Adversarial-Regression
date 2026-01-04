@@ -24,7 +24,7 @@ python run_pipeline.py
 
 # 3. Generate Reports
 python visualize_density.py
-python generate_report.py
+python generate_density_report.py
 ```
 
 ---
