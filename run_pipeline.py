@@ -122,15 +122,15 @@ def main():
     
     # Plotting
     plt.figure(figsize=(10, 6))
-    plt.scatter(y_true_np, y_fake_np, alpha=0.3, color='purple', label='Generated Preds')
+    plt.scatter(y_true_np, y_fake_np, alpha=0.3, color='purple', label='Uretilen Veriler')
     # Ideal line
     min_val = min(y_true_np.min(), y_fake_np.min())
     max_val = max(y_true_np.max(), y_fake_np.max())
     plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Identity (Perfect)')
     
-    plt.xlabel('True Values')
-    plt.ylabel('Generated Values')
-    plt.title('Conditional GAN Regression Performance')
+    plt.xlabel('Gerçek Veriler')
+    plt.ylabel('Uretilen Veriler')
+    plt.title('Conditional GAN Regresyon Performansi')
     plt.legend()
     plt.grid(True)
     plt.savefig('gan_results.png')
