@@ -126,7 +126,7 @@ def main():
     # Ideal line
     min_val = min(y_true_np.min(), y_fake_np.min())
     max_val = max(y_true_np.max(), y_fake_np.max())
-    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Identity (Perfect)')
+    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Ideal (Kusursuz)')
     
     plt.xlabel('Gerçek Veriler')
     plt.ylabel('Uretilen Veriler')
